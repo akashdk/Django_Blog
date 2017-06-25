@@ -1,7 +1,7 @@
 "# Django_Blog" 
 This Software is in public anyone could copy the code and make changes
 
-INTRODUCTION
+INTRODUCTION:
 
 This is a simple user blog application. form collects the infromation about the author and post and it is stored in a database so anyone can read your blog and they can create their own post.
 
