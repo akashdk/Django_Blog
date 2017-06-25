@@ -1,0 +1,21 @@
+{% extends "blog/base.html" %}
+{% block title %}My blog{% endblock %}
+
+{% block content %}
+<div class="page-header">
+<a href="post/new/" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+
+	<h1 >My Blog</h1></div>
+	<div class="post">
+	{% for post in posts %}
+		<h2>
+			<a href="{{ post.get_absolute_url }}">
+			{{post.title}}
+			</a>
+		</h2>
+		<p class="date">
+			published {{ post.publish }} by {{ post.author}}
+		</p>
+		{{ post.body|truncatewords:3000000|linebreaks }}<br>
+	{% endfor %}
+	{% endblock %}</div>
