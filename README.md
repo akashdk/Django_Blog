@@ -10,10 +10,10 @@ STEPS :
 
 Create the virtual env first then clone the app.
 
-1) cd projectname
-2) venv myenvname
-3) cd myenvname
-4) git clone https://github.com/akashdk/Django_Blog/
-5) scripts/activate
-6) cd Django_Blog
+1) git clone https://github.com/akashdk/Django_Blog/ 
+2) cd Django_Blog
+3) virtualenv env
+4) cd myenvname
+5) . env/bin/activate
+6) pip install -r requirements.txt
 7) python manage.py runserver
